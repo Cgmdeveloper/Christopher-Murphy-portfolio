@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher G. Murphy – UX/UI Designer & Developer</title>
+  <meta name="description" content="UX/UI Portfolio of Christopher G. Murphy – HTML, CSS, design systems, and responsive UI components.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: linear-gradient(to bottom right, #f0f4ff, #ffffff); font-family: 'Open Sans', sans-serif; }
+    .card-body p { font-size: 0.9rem; color: #555; }
+    .btn-primary { background-color: #1b6aff; border: none; }
+    .btn-primary:hover { background-color: #155cc0; }
+    .resume-btn, .contact-btn { margin: 0.5rem; }
+    .divider { height: 2px; background: linear-gradient(to right, #1b6aff, #ffffff); margin: 4rem 0; }
+    section.fade-in { animation: fadeIn 1.5s ease-in-out; }
+    header { background: linear-gradient(to right, #1b6aff, #5d9bff); color: white; text-align: center; padding: 4rem 1rem; }
+    footer { background: linear-gradient(to right, #1b6aff, #5d9bff); color: white; text-align: center; padding: 2rem 1rem; }
+    .navbar { background: linear-gradient(to right, #1b6aff, #5d9bff); }
+    .dark-mode { background: linear-gradient(to bottom right, #111, #222) !important; color: #eee !important; }
+    .dark-mode .card { background-color: #1e1e1e; border-color: #333; }
+    .dark-mode .card-body p, .dark-mode h5, .dark-mode h6, .dark-mode p, .dark-mode li { color: #eee !important; }
+    
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  border-radius: 0.25rem;
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <script>
+    function toggleDarkMode() {
+      const footer = document.querySelector('footer');
+      const header = document.querySelector('header');
+      const navbar = document.querySelector('.navbar');
+      if (footer && header) {
+        document.body.classList.toggle('dark-mode');
+        footer.classList.toggle('bg-dark');
+        footer.classList.toggle('text-white');
+        header.classList.toggle('bg-dark');
+        header.classList.toggle('text-white');
+        
+      }
+    }
+  </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Christopher G. Murphy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button class="btn btn-outline-dark dark-toggle position-fixed" style="z-index:1050;" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<header>
+  <h1 class="display-4">Crafting Thoughtful Digital Experiences</h1>
+  <p class="lead">UX/UI Designer & Front-End Developer | HTML • CSS • Accessibility • Creative Strategy</p>
+  <a href="resume.pdf" class="btn btn-light resume-btn" target="_blank">Download Resume</a>
+</header>
+
+<section class="container py-5 fade-in" id="about">
+  <h2 class="text-center mb-4">About Me</h2>
+  <p class="text-center">I’m a front-end designer and developer currently transitioning into a full-time UX/UI career, with a professional background in content strategy, education, and digital systems support. My journey began in higher education, where I led digital content initiatives and managed internal platforms for academic departments. During my recent transition, I’ve focused on building modern, user-centered interfaces using HTML, CSS, and design tools like Figma. While working independently and managing gig work, I’ve committed to mastering UI/UX principles, prototyping, and accessibility best practices. My ultimate goal is to create inclusive, impactful digital experiences—and I’m ready to bring that to your team.</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="container py-5 fade-in" id="skills">
+  <h2 class="text-center mb-4">Skills</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+    <div><i class="fa-brands fa-html5 fa-2x mb-2 text-primary"></i><h6>HTML5</h6></div>
+    <div><i class="fa-brands fa-css3-alt fa-2x mb-2 text-primary"></i><h6>CSS3</h6></div>
+    <div><i class="fa-brands fa-figma fa-2x mb-2 text-primary"></i><h6>Figma</h6></div>
+    <div><i class="fa-brands fa-github fa-2x mb-2 text-primary"></i><h6>GitHub</h6></div>
+    <div><i class="fa-solid fa-envelope fa-2x mb-2 text-primary"></i><h6>Email Development</h6></div>
+    <div><i class="fa-solid fa-code fa-2x mb-2 text-primary"></i><h6>Inline HTML & CSS</h6></div>
+    <div><i class="fa-solid fa-graduation-cap fa-2x mb-2 text-primary"></i><h6>Blackboard / Moodle</h6></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="container py-4 fade-in" id="work">
+  <h2 class="text-center mb-4">My Work</h2>
+  <p class="text-center text-muted mb-4">Below are a few projects I've worked on, including mockups, user flows, and interactive prototypes created in Figma and coded in HTML/CSS.</p>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100" data-aos="fade-up" style="border: 1px solid #333;">
+        <img src="https://i.imgur.com/rWOS8lI.jpeg" class="card-img-top" alt="Transparent Login UI" style="max-height: 220px; width: 100%; object-fit: scale-down;">
+        <div class="card-body">
+          <h5 class="card-title">Transparent Login UI</h5>
+          <p>Login interface with parallax effects and transparent overlays. Built for visual polish and responsive interaction using CSS3 and HTML5.</p>
+          <a href="https://codepen.io/CGMDeveloper/pen/gOvdOBo" target="_blank" class="btn btn-primary">View on CodePen</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100" style="border: 1px solid #333;">
+        <img src="https://i.imgur.com/JRVsDPy.jpeg" class="card-img-top" alt="Coming Soon Concept Page" style="max-height: 220px; width: 100%; object-fit: scale-down;">
+        <div class="card-body">
+          <h5 class="card-title">Coming Soon Concept Page</h5>
+          <p>This concept includes a user flow diagram and mobile-first wireframe mockup. Brand teaser page for a startup, designed with clarity and anticipation in mind. Built using semantic HTML and custom CSS branding.</p>
+          <a href="https://codepen.io/CGMDeveloper/pen/NWEbYjz" target="_blank" class="btn btn-primary">View on CodePen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+  <div class="card h-100" style="border: 1px solid #333;">
+    <img src="https://i.imgur.com/zEKx1Xt.png" class="card-img-top" alt="New Project 1" style="max-height: 220px; width: 100%; object-fit: scale-down;">
+    <div class="card-body">
+      <h5 class="card-title">New Project 1</h5>
+      <p>Brief description of your new project here. Describe the goals, tools, and outcomes.</p>
+      <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card h-100" style="border: 1px solid #333;">
+    <img src="https://i.imgur.com/y70OFaH.jpeg" class="card-img-top" alt="Responsive Gym Landing Page" style="max-height: 220px; width: 100%; object-fit: scale-down;">
+    <div class="card-body">
+      <h5 class="card-title">Responsive Gym Landing Page</h5>
+      <p>A clean homepage for a fitness brand using grid-based layouts and mobile-first design. Includes CTAs and smooth scroll behavior.</p>
+      <a href="https://codepen.io/CGMDeveloper/pen/poZYpKz" target="_blank" class="btn btn-primary">View on CodePen</a>
+    </div>
+  </div>
+</div>
+    $1https://i.imgur.com/y70OFaH.jpeg
+    <div class="col-md-4 mb-4">
+      <div class="card h-100" style="border: 1px solid #333;">
+        <img src="https://i.imgur.com/V2wye0s.jpeg" class="card-img-top" alt="New Project 3" style="max-height: 220px; width: 100%; object-fit: scale-down;">
+        <div class="card-body">
+          <h5 class="card-title">New Project 3</h5>
+          <p>Brief description of your new project here. Describe the goals, tools, and outcomes.</p>
+          <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="divider"></div>
+
+<section class="container py-5 fade-in" id="certifications">
+  <h2 class="text-center mb-4">Bootcamps & Certifications</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-5 mb-4" data-aos="zoom-in">
+      <div class="card shadow-sm h-100 border-primary">
+        <div class="card-body text-center">
+          <i class="fa-solid fa-laptop-code fa-2x text-primary mb-3"></i>
+          <h5 class="card-title">Freemote Bootcamp</h5>
+          <p class="card-text">UX/UI Development focused on HTML, CSS, and freelance-ready workflows. Completed in 2022.</p>
+          <a href="https://freemote.com" target="_blank" class="btn btn-outline-primary">View Program</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 mb-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card shadow-sm h-100 border-primary">
+        <div class="card-body text-center">
+          <i class="fa-solid fa-envelope-open-text fa-2x text-primary mb-3"></i>
+          <h5 class="card-title">HTML Email Development</h5>
+          <p class="card-text">Responsive email development using inline HTML/CSS, table-based design, and marketing workflows. Completed in 2023.</p>
+          <a href="https://www.udemy.com/course/html-email/" target="_blank" class="btn btn-outline-primary">View Course</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</section>
+
+<div class="divider"></div>
+
+<section class="container py-5 fade-in" id="experience">
+  <h2 class="text-center mb-4">Experience</h2>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <h5>Loyola University Maryland</h5>
+      <p class="mb-0"><strong>Business Analyst</strong> (2015 – 2021)</p>
+      <ul>
+        <li>Led content systems and supported academic departments with digital strategy.</li>
+        <li>Created dashboards and tools to help departments manage faculty and student records.</li>
+        <li>Collaborated cross-functionally to improve user access and digital services.</li>
+      </ul>
+    </div>
+    <div class="col-md-6 mb-3">
+      <h5>Independent Contractor</h5>
+      <p class="mb-0"><strong>Freelance/Contract Work</strong> (2021 – Present)</p>
+      <ul>
+        <li>Performed flexible contract work while reskilling in web design and user experience.</li>
+        <li>Balanced self-directed development with client-facing service roles and tech training.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="container py-5 fade-in" id="contact">
+  <h2 class="text-center mb-4">Contact</h2>
+  <div class="text-center">
+    <p>If you'd like to connect about UX/UI projects, collaborations, or just want to say hello:</p>
+    <a href="mailto:christopher.murphy@email.com" class="btn btn-outline-primary contact-btn d-block mx-auto" style="max-width: 200px;">Email Me</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Christopher G. Murphy | Built with HTML, CSS, Bootstrap & ❤️</p>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+$1
+</html>
